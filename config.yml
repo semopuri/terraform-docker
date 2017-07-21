@@ -1,7 +1,8 @@
 ---
 docker:
-  name: semopuri/terraform-docker
+  name: terraform-docker
   tag: v1
   registry:
+  alphine-version: 3.5
   terraform-version: 0.9.11
   sha: 804d31cfa5fee5c2b1bff7816b64f0e26b1d766ac347c67091adccc2626e16f3
