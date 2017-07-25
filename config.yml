@@ -1,6 +1,6 @@
 ---
 docker:
-  name: terraform-docker
+  name: semopuri/terraform-docker
   tag: v1
   registry:
   alpine-version: 3.5
