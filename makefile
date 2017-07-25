@@ -12,6 +12,9 @@ build:
 silent:
 	@docker build --no-cache -q -t $(DOCKER_NAME):latest -t $(DOCKER_NAME):$(TAG_NAME) .
 
-docker: config build
+cleanup:
+	@rm Dockerfile.bck
+
+docker: config build cleanup
 
 #silent: config silent cleanup #silent
