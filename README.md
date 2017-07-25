@@ -1,3 +1,5 @@
+### Build Status [![Build Status](https://travis-ci.org/semopuri/terraform-docker.svg?branch=master)](https://travis-ci.org/)
+
 # terraform-docker
 Dockerfile for Terraform
 
