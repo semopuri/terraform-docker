@@ -13,8 +13,8 @@ Dockerfile for Terraform
   - terraform-version *
   - sha*
   
-- Step 2: Run make command
-          make docker
+- Step 2: Run make command 
+  - make docker
           
 note : working directory is /data
 
