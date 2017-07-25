@@ -1,4 +1,5 @@
 config:
+	@cp template Dockerfile
 	$(eval DOCKER_NAME := $(shell cat config.yml |  python -c 'import yaml; import sys; print yaml.load(sys.stdin)["docker"]["name"]'))
 	$(eval TERRAFORM_VERSION := $(shell cat config.yml |  python -c 'import yaml; import sys; print yaml.load(sys.stdin)["docker"]["terraform-version"]'))
 	$(eval SHA256SUM := $(shell cat config.yml |  python -c 'import yaml; import sys; print yaml.load(sys.stdin)["docker"]["sha"]'))
@@ -11,9 +12,6 @@ build:
 silent:
 	@docker build --no-cache -q -t $(DOCKER_NAME):latest -t $(DOCKER_NAME):$(TAG_NAME) .
 
-cleanup:
-	@mv Dockerfile.bck Dockerfile
- 
-docker: config build cleanup
+docker: config build
 
 #silent: config silent cleanup #silent
