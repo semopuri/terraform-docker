@@ -28,4 +28,3 @@ WORKDIR /data
 
 ENTRYPOINT ["/bin/terraform"]
 CMD ["--help"]
-
