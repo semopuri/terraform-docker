@@ -4,5 +4,5 @@ docker:
   tag: v1
   registry:
   alpine-version: latest
-  terraform-version: 0.9.11
-  sha: 804d31cfa5fee5c2b1bff7816b64f0e26b1d766ac347c67091adccc2626e16f3
+  terraform-version: 0.11.3
+  sha: 5925cd4d81e7d8f42a0054df2aafd66e2ab7408dbed2bd748f0022cfe592f8d2
