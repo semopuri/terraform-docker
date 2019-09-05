@@ -3,6 +3,6 @@ docker:
   name: semopuri/terraform-docker
   tag: v1
   registry:
-  alpine-version: latest
+  alpine-version: 3.7
   terraform-version: 0.11.14
   sha: 9b9a4492738c69077b079e595f5b2a9ef1bc4e8fb5596610f69a6f322a8af8dd
